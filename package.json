@@ -1,0 +1,40 @@
+{
+  "name": "vue-starter",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "serve": "vite",
+    "build": "vite build",
+    "lint": "eslint 'src/**/*.{js,vue}'",
+    "unit": "jest --coverage",
+    "preview": "caddy run",
+    "setup": "cd e2e && yarn install",
+    "e2e": "cd e2e && yarn test",
+    "meas": "cd e2e && yarn perf",
+    "active": "cd mock/requests && yarn install",
+    "mock": "cd mock/requests && yarn serve"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "vue": "3.2.4",
+    "vue-formor": "^0.6.0",
+    "vue-localer": "^0.3.1",
+    "vue-router": "^4.0.3"
+  },
+  "devDependencies": {
+    "@iconify/json": "^1.1.329",
+    "@vitejs/plugin-vue": "^1.1.4",
+    "@vue/compiler-sfc": "3.2.4",
+    "eslint": "^7.22.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-prettier-vue": "^3.0.0",
+    "eslint-plugin-vue": "^7.7.0",
+    "prettier": "^2.2.1",
+    "process-envify": "^1.0.2",
+    "vite": "^2.0.1",
+    "vite-plugin-components": "^0.8.3",
+    "vite-plugin-icons": "^0.5.0",
+    "vite-plugin-windicss": "^1.2.4",
+    "windicss": "^3.1.5"
+  }
+}
